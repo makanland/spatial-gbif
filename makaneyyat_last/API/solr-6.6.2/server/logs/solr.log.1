@@ -1,0 +1,145 @@
+2019-08-01 06:07:39.519 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2019-08-01 06:07:40.318 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.2
+2019-08-01 06:07:40.319 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-08-01 06:07:40.319 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /var/www/html/makaneyyat_last/API/solr-6.6.2
+2019-08-01 06:07:40.362 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-08-01T06:07:40.320Z
+2019-08-01 06:07:40.363 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2019-08-01 06:07:40.509 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr
+2019-08-01 06:07:40.566 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr/solr.xml
+2019-08-01 06:07:42.576 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2019-08-01 06:07:43.181 WARN  (main) [   ] o.a.s.h.a.SystemInfoHandler Unable to resolve canonical hostname for local host, possible DNS misconfiguration. Set the 'solr.dns.prevent.reverse.lookup' sysprop to true on startup to prevent future lookups if DNS can not be fixed.
+java.net.UnknownHostException: mograbi-Inspiron-5559: mograbi-Inspiron-5559: Name or service not known
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1506)
+	at org.apache.solr.handler.admin.SystemInfoHandler.initHostname(SystemInfoHandler.java:110)
+	at org.apache.solr.handler.admin.SystemInfoHandler.<init>(SystemInfoHandler.java:97)
+	at org.apache.solr.handler.admin.InfoHandler.<init>(InfoHandler.java:52)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:636)
+	at org.apache.solr.core.CoreContainer.createHandler(CoreContainer.java:1411)
+	at org.apache.solr.core.CoreContainer.load(CoreContainer.java:496)
+	at org.apache.solr.servlet.SolrDispatchFilter.createCoreContainer(SolrDispatchFilter.java:244)
+	at org.apache.solr.servlet.SolrDispatchFilter.init(SolrDispatchFilter.java:173)
+	at org.eclipse.jetty.servlet.FilterHolder.initialize(FilterHolder.java:137)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:873)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:349)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1404)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1366)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:778)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:262)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:520)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.deploy.bindings.StandardStarter.processBinding(StandardStarter.java:41)
+	at org.eclipse.jetty.deploy.AppLifeCycle.runBindings(AppLifeCycle.java:188)
+	at org.eclipse.jetty.deploy.DeploymentManager.requestAppGoal(DeploymentManager.java:499)
+	at org.eclipse.jetty.deploy.DeploymentManager.addApp(DeploymentManager.java:147)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.fileAdded(ScanningAppProvider.java:180)
+	at org.eclipse.jetty.deploy.providers.WebAppProvider.fileAdded(WebAppProvider.java:458)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider$1.fileAdded(ScanningAppProvider.java:64)
+	at org.eclipse.jetty.util.Scanner.reportAddition(Scanner.java:610)
+	at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:529)
+	at org.eclipse.jetty.util.Scanner.scan(Scanner.java:392)
+	at org.eclipse.jetty.util.Scanner.doStart(Scanner.java:313)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.doStart(ScanningAppProvider.java:150)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.deploy.DeploymentManager.startAppProvider(DeploymentManager.java:561)
+	at org.eclipse.jetty.deploy.DeploymentManager.doStart(DeploymentManager.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.server.Server.start(Server.java:422)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:389)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.xml.XmlConfiguration$1.run(XmlConfiguration.java:1516)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1441)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:214)
+	at org.eclipse.jetty.start.Main.start(Main.java:457)
+	at org.eclipse.jetty.start.Main.main(Main.java:75)
+Caused by: java.net.UnknownHostException: mograbi-Inspiron-5559: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1501)
+	... 54 more
+2019-08-01 06:07:43.418 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr
+2019-08-01 06:07:43.423 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [elements]
+2019-08-01 06:07:43.433 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-08-01 06:07:43.689 INFO  (main) [   ] o.e.j.s.Server Started @6198ms
+2019-08-01 06:07:43.767 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.c.SolrResourceLoader [elements] Added 53 libs to classloader, from paths: [/var/www/html/makaneyyat_last/API/solr-6.6.2/contrib/clustering/lib, /var/www/html/makaneyyat_last/API/solr-6.6.2/contrib/extraction/lib, /var/www/html/makaneyyat_last/API/solr-6.6.2/contrib/langid/lib, /var/www/html/makaneyyat_last/API/solr-6.6.2/contrib/velocity/lib, /var/www/html/makaneyyat_last/API/solr-6.6.2/dist]
+2019-08-01 06:07:44.971 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.2
+2019-08-01 06:07:45.152 WARN  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2019-08-01 06:07:45.221 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.s.IndexSchema [elements] Schema name=haystack-schema
+2019-08-01 06:07:45.468 WARN  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2019-08-01 06:07:46.257 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.s.IndexSchema Loaded schema haystack-schema/1.6 with uniqueid field id
+2019-08-01 06:07:46.300 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.c.CoreContainer Creating SolrCore 'elements' using configuration from instancedir /var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr/elements, trusted=true
+2019-08-01 06:07:46.412 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2019-08-01 06:07:46.434 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.c.SolrCore [[elements] ] Opening new SolrCore at [/var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr/elements], dataDir=[/var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr/elements/data/]
+2019-08-01 06:07:46.557 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-08-01 06:07:47.981 WARN  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.h.a.SystemInfoHandler Unable to resolve canonical hostname for local host, possible DNS misconfiguration. Set the 'solr.dns.prevent.reverse.lookup' sysprop to true on startup to prevent future lookups if DNS can not be fixed.
+java.net.UnknownHostException: mograbi-Inspiron-5559: mograbi-Inspiron-5559: Name or service not known
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1506)
+	at org.apache.solr.handler.admin.SystemInfoHandler.initHostname(SystemInfoHandler.java:110)
+	at org.apache.solr.handler.admin.SystemInfoHandler.<init>(SystemInfoHandler.java:97)
+	at org.apache.solr.handler.admin.SystemInfoHandler.<init>(SystemInfoHandler.java:91)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:636)
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:589)
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:582)
+	at org.apache.solr.core.SolrCore.createInstance(SolrCore.java:763)
+	at org.apache.solr.core.PluginBag.createPlugin(PluginBag.java:133)
+	at org.apache.solr.core.PluginBag.init(PluginBag.java:269)
+	at org.apache.solr.core.RequestHandlers.initHandlersFromConfig(RequestHandlers.java:130)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:935)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:830)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:948)
+	at org.apache.solr.core.CoreContainer.lambda$load$5(CoreContainer.java:564)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.UnknownHostException: mograbi-Inspiron-5559: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1501)
+	... 24 more
+2019-08-01 06:07:48.113 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-08-01 06:07:48.115 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-08-01 06:07:48.218 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2019-08-01 06:07:48.219 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-08-01 06:07:48.810 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.s.SolrIndexSearcher Opening [Searcher@1993aa73[elements] main]
+2019-08-01 06:07:48.848 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr/elements/conf
+2019-08-01 06:07:48.878 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-08-01 06:07:48.888 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-08-01 06:07:48.891 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr/elements/conf/elevate.xml
+2019-08-01 06:07:48.907 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2019-08-01 06:07:48.991 INFO  (searcherExecutor-7-thread-1-processing-x:elements) [   x:elements] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1993aa73[elements] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1rx(6.6.2):C16812) Uninverting(_1ry(6.6.2):C1000) Uninverting(_1rz(6.6.2):C850) Uninverting(_1s0(6.6.2):C11)))}
+2019-08-01 06:07:48.991 INFO  (searcherExecutor-7-thread-1-processing-x:elements) [   x:elements] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-08-01 06:07:48.991 INFO  (searcherExecutor-7-thread-1-processing-x:elements) [   x:elements] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-08-01 06:07:48.996 INFO  (searcherExecutor-7-thread-1-processing-x:elements) [   x:elements] o.a.s.c.SolrCore [elements] Registered new searcher Searcher@1993aa73[elements] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1rx(6.6.2):C16812) Uninverting(_1ry(6.6.2):C1000) Uninverting(_1rz(6.6.2):C850) Uninverting(_1s0(6.6.2):C11)))}
+2019-08-01 06:08:27.163 INFO  (qtp314337396-20) [   x:elements] o.a.s.c.S.Request [elements]  webapp=/solr path=/select params={q=level1:("Forest+and+seminatural+areas")&df=text&facet.field=level3_exact&facet.field=level1_exact&facet.field=level2_exact&facet.field=level4_exact&facet.field=source_exact&facet.field=year_exact&facet.field=subject_exact&fl=*+score&start=0&fq=django_ct:(Map.dataelement+OR+Map.linestringdataelement+OR+Map.multilinestringdataelement+OR+Map.multipolygondataelement+OR+Map.pointdataelement+OR+Map.polygondataelement)&wt=json&facet=on} hits=773 status=0 QTime=298
+2019-08-01 06:08:27.253 INFO  (qtp314337396-19) [   x:elements] o.a.s.c.S.Request [elements]  webapp=/solr path=/select params={q=level1:("Forest+and+seminatural+areas")&df=text&facet.field=level1_exact&facet.field=subject_exact&facet.field=level2_exact&facet.field=year_exact&facet.field=source_exact&facet.field=level3_exact&facet.field=level4_exact&fl=*+score&start=0&fq=django_ct:(Map.dataelement+OR+Map.linestringdataelement+OR+Map.multilinestringdataelement+OR+Map.multipolygondataelement+OR+Map.pointdataelement+OR+Map.polygondataelement)&rows=1&wt=json&facet=on} hits=773 status=0 QTime=7
+2019-08-01 06:08:27.283 INFO  (qtp314337396-19) [   x:elements] o.a.s.c.S.Request [elements]  webapp=/solr path=/select params={q=level1:("Forest+and+seminatural+areas")&df=text&facet.field=level1_exact&facet.field=subject_exact&facet.field=level2_exact&facet.field=year_exact&facet.field=source_exact&facet.field=level3_exact&facet.field=level4_exact&fl=*+score&start=0&fq=django_ct:(Map.dataelement+OR+Map.linestringdataelement+OR+Map.multilinestringdataelement+OR+Map.multipolygondataelement+OR+Map.pointdataelement+OR+Map.polygondataelement)&rows=100&wt=json&facet=on} hits=773 status=0 QTime=18
+2019-08-01 06:30:45.208 INFO  (qtp314337396-12) [   x:elements] o.a.s.c.S.Request [elements]  webapp=/solr path=/select params={q=level1:("Forest+and+seminatural+areas")&df=text&facet.field=level3_exact&facet.field=level1_exact&facet.field=level2_exact&facet.field=level4_exact&facet.field=source_exact&facet.field=year_exact&facet.field=subject_exact&fl=*+score&start=0&fq=django_ct:(Map.dataelement+OR+Map.linestringdataelement+OR+Map.multilinestringdataelement+OR+Map.multipolygondataelement+OR+Map.pointdataelement+OR+Map.polygondataelement)&wt=json&facet=on} hits=773 status=0 QTime=6
+2019-08-01 06:30:45.229 INFO  (qtp314337396-20) [   x:elements] o.a.s.c.S.Request [elements]  webapp=/solr path=/select params={q=level1:("Forest+and+seminatural+areas")&df=text&facet.field=level1_exact&facet.field=subject_exact&facet.field=level2_exact&facet.field=year_exact&facet.field=source_exact&facet.field=level3_exact&facet.field=level4_exact&fl=*+score&start=0&fq=django_ct:(Map.dataelement+OR+Map.linestringdataelement+OR+Map.multilinestringdataelement+OR+Map.multipolygondataelement+OR+Map.pointdataelement+OR+Map.polygondataelement)&rows=1&wt=json&facet=on} hits=773 status=0 QTime=3
+2019-08-01 06:30:45.237 INFO  (qtp314337396-19) [   x:elements] o.a.s.c.S.Request [elements]  webapp=/solr path=/select params={q=level1:("Forest+and+seminatural+areas")&df=text&facet.field=level1_exact&facet.field=subject_exact&facet.field=level2_exact&facet.field=year_exact&facet.field=source_exact&facet.field=level3_exact&facet.field=level4_exact&fl=*+score&start=0&fq=django_ct:(Map.dataelement+OR+Map.linestringdataelement+OR+Map.multilinestringdataelement+OR+Map.multipolygondataelement+OR+Map.pointdataelement+OR+Map.polygondataelement)&rows=100&wt=json&facet=on} hits=773 status=0 QTime=3
+2019-08-01 07:01:11.675 INFO  (Thread-0) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1629687658
+2019-08-01 07:01:11.676 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
+2019-08-01 07:01:11.677 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
+2019-08-01 07:01:11.678 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
+2019-08-01 07:01:11.682 INFO  (coreCloseExecutor-13-thread-1) [   x:elements] o.a.s.c.SolrCore [elements]  CLOSING SolrCore org.apache.solr.core.SolrCore@71b87c2
+2019-08-01 07:01:11.790 INFO  (coreCloseExecutor-13-thread-1) [   x:elements] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.elements

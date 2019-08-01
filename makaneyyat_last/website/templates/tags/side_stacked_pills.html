@@ -1,0 +1,33 @@
+{% load custom %}
+{% get_text_dir request.LANGUAGE_CODE as txt_dir %}
+<div class="row">
+    <div class="col-md-4">
+      <div class="row">
+        <ul class="nav nav-pills nav-stacked" id="mainNavPills">
+        {% for menuitem in menuitems %}
+        {% with menuitem=menuitem.specific %}
+            <li class="{%if menuitem.title == 'Home'%}active{%endif%}"><a data-toggle="pill" href="#{%cycle '1' '2' '3' '4' '5' '6' '7' as 'ids'%}">{{ menuitem.Title }}</a></li>
+        {% endwith %}
+        {% endfor %}
+    
+       </ul>
+      </div>
+    </div>
+
+  <div class="col-md-8">
+  <div class="tab-content" style="text-align:{{txt_dir}}">
+    {% for menuitem in menuitems %}
+    {% with menuitem=menuitem.specific %}
+        <div role ="tabpanel" id="{%cycle '1' '2' '3' '4' '5' '6' '7'%}" class="tab-pane fade {%if menuitem.title == 'Home'%}active in{%endif%}">
+         <h2>
+          {{menuitem.Title}}
+        </h2>
+          {%autoescape off%}
+          {{menuitem.body}}
+          {%endautoescape%}
+        </div>
+    {% endwith %}
+    {% endfor %}
+  </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Makaneyyat Administration</a></h1>
+
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+{% block content %}
+
+    <a href="{% url 'map:shpFile-import'%}" class="grp-state-focus addlink">Reindex</a>
+
+    {{ block.super }}
+
+
+{% endblock %}

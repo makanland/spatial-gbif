@@ -1,0 +1,136 @@
+{
+  "type": "FeatureCollection",
+  "name": "geoJSON",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 0,
+        "title": "test polygon1",
+        "creator": "Makaneyyat",
+        "subject": "Land Use-Land Cover \r\n",
+        "descriptio": "Digitized polygon from 1918 aerial photograph\n",
+        "publisher": "Makaneyyat\n",
+        "contributo": null,
+        "type": "Polygon",
+        "format": "JSON\n",
+        "source": "Bavarian Air Squadron 304 aerial photograph collection, World War I, Palestine\n",
+        "language": "En\n",
+        "relation": "isReferencedBy Makaneyyat, Aerial photograph, 1918\n",
+        "coverage": "Palestine\n",
+        "ar_title": "المناطق الحضرية",
+        "ar_creator": "مكانيات",
+        "ar_subject": "غطاء ارضي-استعمالات اراضي",
+        "ar_descrip": "مضلع رقمي لصورة جوية من عام 1918",
+        "ar_publish": "مكانيات",
+        "ar_contrib": null,
+        "ar_type": "مضلع",
+        "ar_format": "JSON\n",
+        "Identifier": null,
+        "ar_languag": "الإنجليزية",
+        "ar_relatio": "يُشار إليه بواسطة: مكانيات, صورة جوية لفلسطين, 1918",
+        "ar_coverag": "فلسطين",
+        "ar_source": "مجموعة الصور  الفوتوغرافية الجوية، وحده رقم 304 القوات الطيران العسكريه البفاريه، المانيا الحرب العالميه الاولى",
+        "ar_rights": null,
+        "rights": null,
+        "CLCode": "112",
+        "date": "1918\/01\/01"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.17547607421875,
+              32.13143129714792
+            ],
+            [
+              35.333404541015625,
+              31.975463762188678
+            ],
+            [
+              35.391082763671875,
+              32.12910537866883
+            ],
+            [
+              35.17547607421875,
+              32.13143129714792
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 0,
+        "title": "test polygon2",
+        "creator": "Makaneyyat",
+        "subject": "Land Use-Land Cover \r\n",
+        "descriptio": "Digitized polygon from 1918 aerial photograph\n",
+        "publisher": "Makaneyyat\n",
+        "contributo": null,
+        "type": "Polygon",
+        "format": "JSON\n",
+        "source": "Bavarian Air Squadron 304 aerial photograph collection, World War I, Palestine\n",
+        "language": "En\n",
+        "relation": "isReferencedBy Makaneyyat, Aerial photograph, 1918\n",
+        "coverage": "Palestine\n",
+        "ar_title": "المناطق الحضرية",
+        "ar_creator": "مكانيات",
+        "ar_subject": "غطاء ارضي-استعمالات اراضي",
+        "ar_descrip": "مضلع رقمي لصورة جوية من عام 1918",
+        "ar_publish": "مكانيات",
+        "ar_contrib": null,
+        "ar_type": "مضلع",
+        "ar_format": "JSON\n",
+        "Identifier": null,
+        "ar_languag": "الإنجليزية",
+        "ar_relatio": "يُشار إليه بواسطة: مكانيات, صورة جوية لفلسطين, 1918",
+        "ar_coverag": "فلسطين",
+        "ar_source": "مجموعة الصور  الفوتوغرافية الجوية، وحده رقم 304 القوات الطيران العسكريه البفاريه، المانيا الحرب العالميه الاولى",
+        "ar_rights": null,
+        "rights": null,
+        "CLCode": "112",
+        "date": "1918\/01\/01"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.429534912109375,
+              32.29409809657151
+            ],
+            [
+              35.44189453125,
+              32.38923910985902
+            ],
+            [
+              35.26336669921875,
+              32.44488496716713
+            ],
+            [
+              35.16448974609375,
+              32.377641904110355
+            ],
+            [
+              35.1727294921875,
+              32.246490096781194
+            ],
+            [
+              35.429534912109375,
+              32.29409809657151
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

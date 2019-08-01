@@ -1,0 +1,13 @@
+<dl>
+{% if facets.fields.source %}
+<dt>Filter by Category</dt>
+{% for category in facets.fields.source %}
+{% if source.1 != 0 %}
+<dd>
+<input class="facet" id="{{source.0|cut:" "}}" type="checkbox" name="source" value="{{ source.0 }}"
+data-toggle="toggle" /> {{ source.0 }} ({{ source.1 }})
+</dd>
+{% endif %}
+{% endfor %}
+{% endif %}
+</dl>

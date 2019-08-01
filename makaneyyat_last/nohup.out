@@ -1,0 +1,1629 @@
+/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'API.models.Location'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[25/Oct/2017 12:46:01] "GET /API/locations/ HTTP/1.1" 200 170472
+[25/Oct/2017 12:46:06] "GET /API/locations/ HTTP/1.1" 200 170472
+[25/Oct/2017 12:46:16] "GET /API/locations/ HTTP/1.1" 200 170472
+[25/Oct/2017 12:47:23] "GET /API/locations/?format=json HTTP/1.1" 200 39905
+[25/Oct/2017 13:04:48] "GET /API/locations/?format=json HTTP/1.1" 200 39905
+[25/Oct/2017 13:05:24] "GET /API/locations/?format=json HTTP/1.1" 200 39905
+[25/Oct/2017 13:06:04] "GET /API/locations/?format=json HTTP/1.1" 200 39905
+[25/Oct/2017 13:07:57] "GET /API/locations/?format=json HTTP/1.1" 200 39905
+Traceback (most recent call last):
+  File "manage.py", line 17, in <module>
+    "Couldn't import Django. Are you sure it's installed and "
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+Traceback (most recent call last):
+  File "manage.py", line 17, in <module>
+    "Couldn't import Django. Are you sure it's installed and "
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+Traceback (most recent call last):
+  File "manage.py", line 17, in <module>
+    "Couldn't import Django. Are you sure it's installed and "
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'API.models.Location'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[26/Oct/2017 08:54:56] "GET /API/locations/ HTTP/1.1" 200 170472
+[26/Oct/2017 09:20:27] "GET /API/locations/?fromat=json HTTP/1.1" 200 80
+Not Found: /API/locations/fromat=json
+[26/Oct/2017 09:40:58] "GET /API/locations/fromat=json HTTP/1.1" 404 3018
+/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'API.models.Location'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[26/Oct/2017 09:41:11] "GET /API/locations/?fromat=json HTTP/1.1" 200 5394
+[26/Oct/2017 09:41:27] "GET /API/locations/?format=json HTTP/1.1" 200 39905
+[26/Oct/2017 09:42:12] "GET /API/locations/?format=json HTTP/1.1" 200 39905
+[26/Oct/2017 09:43:43] "GET /API/locations/?format=json HTTP/1.1" 200 39905
+[26/Oct/2017 09:49:14] "GET /API/locations/ HTTP/1.1" 200 170472
+Not Found: /API/locations/
+[26/Oct/2017 09:55:51] "GET /API/locations/?format=jsosn HTTP/1.1" 404 23
+[26/Oct/2017 09:55:54] "GET /API/locations/?format=json HTTP/1.1" 200 39905
+[26/Oct/2017 10:01:48] "GET /API/locations/ HTTP/1.1" 200 170472
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 26, 2017 - 08:54:50
+Django version 1.11.5, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f3f7ad378c8>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 251, in raise_last_exception
+    six.reraise(*_exception)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/apps/config.py", line 94, in create
+    module = import_module(entry)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/haystack/__init__.py", line 36, in <module>
+    raise ImproperlyConfigured('The HAYSTACK_CONNECTIONS setting is required.')
+django.core.exceptions.ImproperlyConfigured: The HAYSTACK_CONNECTIONS setting is required.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fb742dc5598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 39, in <module>
+    url(r'^Map/', include('Map.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Map/urls.py", line 7, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 936, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/haystack/__init__.py", line 36, in <module>
+    raise ImproperlyConfigured('The HAYSTACK_CONNECTIONS setting is required.')
+django.core.exceptions.ImproperlyConfigured: The HAYSTACK_CONNECTIONS setting is required.
+Performing system checks...
+
+/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'API.models.Location'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[26/Oct/2017 10:39:41] "GET /API/locations/properties/ HTTP/1.1" 200 16049
+[26/Oct/2017 10:40:26] "GET /API/locations/properties/ HTTP/1.1" 200 3350
+[26/Oct/2017 10:44:31] "GET /API/locations/properties/ HTTP/1.1" 200 3350
+[26/Oct/2017 10:48:01] "GET /API/locations/properties/ HTTP/1.1" 200 3350
+[26/Oct/2017 10:49:54] "GET /API/locations/properties/?format=json HTTP/1.1" 200 3362
+[26/Oct/2017 10:58:39] "GET /API/locations/properties/?format=json HTTP/1.1" 200 3362
+[26/Oct/2017 10:59:19] "GET /API/locations/properties/?format=json HTTP/1.1" 200 3362
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 26, 2017 - 10:39:29
+Django version 1.11.5, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 26, 2017 - 11:46:10
+Django version 1.11.5, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 26, 2017 - 11:46:15
+Django version 1.11.5, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 26, 2017 - 11:46:27
+Django version 1.11.5, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'API.models.Location'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[26/Oct/2017 11:46:52] "GET /API/locations/ HTTP/1.1" 200 170429
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 26, 2017 - 11:46:36
+Django version 1.11.5, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fb6f6326598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 39, in <module>
+    url(r'^Map/', include('Map.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Map/urls.py", line 7, in <module>
+    url(r'^search/', include('haystack.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 936, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/haystack/__init__.py", line 36, in <module>
+    raise ImproperlyConfigured('The HAYSTACK_CONNECTIONS setting is required.')
+django.core.exceptions.ImproperlyConfigured: The HAYSTACK_CONNECTIONS setting is required.
+Performing system checks...
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 26, 2017 - 12:06:16
+Django version 1.11.5, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 26, 2017 - 12:06:19
+Django version 1.11.5, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 26, 2017 - 12:06:36
+Django version 1.11.5, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 26, 2017 - 12:07:23
+Django version 1.11.5, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f224c779b70>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 251, in raise_last_exception
+    six.reraise(*_exception)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/apps/config.py", line 94, in create
+    module = import_module(entry)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 948, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'haystack'
+/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'API.models.Location'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[26/Oct/2017 12:53:44] "GET /API/locations/ HTTP/1.1" 200 170429
+[26/Oct/2017 12:54:26] "GET /API/locations/?format=json HTTP/1.1" 200 39905
+[26/Oct/2017 13:56:34] "GET /API/locations/ HTTP/1.1" 200 170429
+[26/Oct/2017 13:56:34] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[26/Oct/2017 13:56:34] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[26/Oct/2017 13:56:34] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[26/Oct/2017 13:56:34] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[26/Oct/2017 13:56:34] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[26/Oct/2017 13:56:34] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[26/Oct/2017 13:56:34] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[26/Oct/2017 13:56:34] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[26/Oct/2017 13:56:34] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[26/Oct/2017 13:56:34] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[26/Oct/2017 13:56:34] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 26, 2017 - 12:53:27
+Django version 1.11.6, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 26, 2017 - 14:23:33
+Django version 1.11.6, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 26, 2017 - 14:23:46
+Django version 1.11.6, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fd5e3cdf598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView, LocationPropertiesListView
+ImportError: cannot import name 'LocationPropertiesListView'
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f22ea296598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView, LocationPropertiesListView
+ImportError: cannot import name 'LocationPropertiesListView'
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f7507e7f598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView, LocationPropertiesListView
+ImportError: cannot import name 'LocationPropertiesListView'
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f49f841f598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView, LocationPropertiesListView
+ImportError: cannot import name 'LocationPropertiesListView'
+Performing system checks...
+
+/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/rest_framework/pagination.py:208: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'API.models.Location'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[26/Oct/2017 14:26:02] "GET /API/locations/ HTTP/1.1" 200 170429
+[26/Oct/2017 14:26:02] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[26/Oct/2017 14:26:02] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[26/Oct/2017 14:26:02] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[26/Oct/2017 14:26:02] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[26/Oct/2017 14:26:02] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[26/Oct/2017 14:26:02] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[26/Oct/2017 14:26:02] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[26/Oct/2017 14:26:02] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[26/Oct/2017 14:26:02] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[26/Oct/2017 14:26:02] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[26/Oct/2017 14:26:02] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[27/Oct/2017 12:11:40] "GET /API/locations/ HTTP/1.1" 200 170429
+[27/Oct/2017 12:11:40] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[27/Oct/2017 12:11:40] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[27/Oct/2017 12:11:40] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[27/Oct/2017 12:11:40] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[27/Oct/2017 12:11:40] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[27/Oct/2017 12:11:40] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[27/Oct/2017 12:11:40] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[27/Oct/2017 12:11:40] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[27/Oct/2017 12:11:40] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[27/Oct/2017 12:11:40] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[27/Oct/2017 12:11:40] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[27/Oct/2017 12:24:26] "GET /API/locations/ HTTP/1.1" 200 170429
+[27/Oct/2017 12:24:27] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[27/Oct/2017 12:24:27] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[27/Oct/2017 12:24:27] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[27/Oct/2017 12:24:27] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[27/Oct/2017 12:24:27] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[27/Oct/2017 12:24:27] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[27/Oct/2017 12:24:27] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[27/Oct/2017 12:24:27] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[27/Oct/2017 12:24:27] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[27/Oct/2017 12:24:27] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[27/Oct/2017 12:24:27] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[27/Oct/2017 13:20:54] "GET /admin/API/location/ HTTP/1.1" 302 0
+[27/Oct/2017 13:20:55] "GET /admin/login/?next=/admin/API/location/ HTTP/1.1" 200 1677
+[27/Oct/2017 13:20:55] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[27/Oct/2017 13:20:55] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[27/Oct/2017 13:20:55] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[27/Oct/2017 13:20:55] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[27/Oct/2017 13:20:55] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[27/Oct/2017 13:21:05] "POST /admin/login/?next=/admin/API/location/ HTTP/1.1" 302 0
+[27/Oct/2017 13:21:05] "GET /admin/API/location/ HTTP/1.1" 200 27113
+[27/Oct/2017 13:21:06] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[27/Oct/2017 13:21:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 13:21:06] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[27/Oct/2017 13:21:06] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[27/Oct/2017 13:21:06] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[27/Oct/2017 13:21:06] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[27/Oct/2017 13:21:06] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[27/Oct/2017 13:21:06] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+[27/Oct/2017 13:21:06] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[27/Oct/2017 13:21:06] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[27/Oct/2017 13:21:06] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[27/Oct/2017 13:21:06] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[27/Oct/2017 13:21:20] "GET /admin/API/location/4080/change/ HTTP/1.1" 200 47599
+[27/Oct/2017 13:21:20] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[27/Oct/2017 13:21:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 13:21:20] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[27/Oct/2017 13:21:20] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[27/Oct/2017 13:21:20] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[27/Oct/2017 13:21:20] "GET /static/admin/img/gis/move_vertex_on.svg HTTP/1.1" 200 1129
+[27/Oct/2017 13:21:44] "GET /admin/API/location/ HTTP/1.1" 200 27113
+[27/Oct/2017 13:21:46] "GET /admin/API/location/4077/change/ HTTP/1.1" 200 14857
+[27/Oct/2017 13:21:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 13:21:52] "GET /admin/API/location/ HTTP/1.1" 200 27113
+[27/Oct/2017 13:21:57] "GET /admin/API/location/3981/change/ HTTP/1.1" 200 15337
+[27/Oct/2017 13:21:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 13:22:03] "GET /admin/API/location/ HTTP/1.1" 200 27113
+[27/Oct/2017 13:22:05] "GET /admin/API/location/?p=1 HTTP/1.1" 200 29739
+[27/Oct/2017 13:22:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 13:22:07] "GET /admin/API/location/3980/change/?_changelist_filters=p%3D1 HTTP/1.1" 200 15223
+[27/Oct/2017 13:22:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 13:22:14] "GET /admin/API/location/?p=1 HTTP/1.1" 200 29739
+[27/Oct/2017 13:22:20] "GET /admin/API/location/3881/change/?_changelist_filters=p%3D1 HTTP/1.1" 200 131825
+[27/Oct/2017 13:22:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 13:22:28] "GET /admin/API/location/?p=1 HTTP/1.1" 200 29739
+[27/Oct/2017 13:22:31] "GET /admin/API/location/?p=2 HTTP/1.1" 200 29739
+[27/Oct/2017 13:22:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 13:22:36] "GET /admin/API/location/3781/change/?_changelist_filters=p%3D2 HTTP/1.1" 200 15979
+[27/Oct/2017 13:22:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 13:22:40] "GET /admin/API/location/?p=2 HTTP/1.1" 200 29739
+[27/Oct/2017 13:22:42] "GET /admin/API/location/?p=3 HTTP/1.1" 200 29739
+[27/Oct/2017 13:22:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 13:22:44] "GET /admin/API/location/3780/change/?_changelist_filters=p%3D3 HTTP/1.1" 200 14984
+[27/Oct/2017 13:22:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 13:22:49] "GET /admin/API/location/?p=3 HTTP/1.1" 200 29739
+[27/Oct/2017 13:22:57] "GET /admin/API/location/3713/change/?_changelist_filters=p%3D3 HTTP/1.1" 200 14886
+[27/Oct/2017 13:22:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 13:23:02] "GET /admin/API/location/?p=3 HTTP/1.1" 200 29739
+[27/Oct/2017 13:23:07] "GET /admin/API/location/3708/change/?_changelist_filters=p%3D3 HTTP/1.1" 200 15698
+[27/Oct/2017 13:23:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 13:23:15] "GET /admin/API/location/?p=3 HTTP/1.1" 200 29739
+[27/Oct/2017 13:23:29] "GET /admin/API/location/3703/change/?_changelist_filters=p%3D3 HTTP/1.1" 200 16028
+[27/Oct/2017 13:23:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 13:23:33] "GET /admin/API/location/?p=3 HTTP/1.1" 200 29739
+[27/Oct/2017 13:23:40] "GET /admin/API/location/3702/change/?_changelist_filters=p%3D3 HTTP/1.1" 200 33890
+[27/Oct/2017 13:23:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 14:15:15] "GET /API/locations/ HTTP/1.1" 200 170463
+[27/Oct/2017 14:15:15] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[27/Oct/2017 14:15:15] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[27/Oct/2017 14:15:15] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[27/Oct/2017 14:15:15] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[27/Oct/2017 14:15:15] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[27/Oct/2017 14:15:15] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[27/Oct/2017 14:15:15] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[27/Oct/2017 14:15:15] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[27/Oct/2017 14:15:15] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[27/Oct/2017 14:15:15] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[27/Oct/2017 14:15:15] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[27/Oct/2017 14:17:48] "GET /admin/API/location/ HTTP/1.1" 200 27113
+[27/Oct/2017 14:17:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 14:17:52] "GET /admin/API/ HTTP/1.1" 200 2562
+[27/Oct/2017 14:17:52] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[27/Oct/2017 14:17:52] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[27/Oct/2017 14:17:52] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[27/Oct/2017 14:17:53] "GET /admin/API/dci/ HTTP/1.1" 200 3177
+[27/Oct/2017 14:17:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 14:17:56] "GET /admin/API/dci/import/ HTTP/1.1" 200 3052
+[27/Oct/2017 14:18:08] "POST /admin/API/dci/import/ HTTP/1.1" 200 96236
+[27/Oct/2017 14:18:14] "POST /admin/API/dci/process_import/ HTTP/1.1" 302 0
+[27/Oct/2017 14:18:15] "GET /admin/API/dci/ HTTP/1.1" 200 17381
+[27/Oct/2017 14:18:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 14:18:15] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[27/Oct/2017 19:15:40] "GET /admin/API/location/ HTTP/1.1" 200 27113
+[27/Oct/2017 19:15:40] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[27/Oct/2017 19:15:40] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[27/Oct/2017 19:15:40] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[27/Oct/2017 19:15:40] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[27/Oct/2017 19:15:40] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[27/Oct/2017 19:15:40] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[27/Oct/2017 19:15:40] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[27/Oct/2017 19:15:40] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[27/Oct/2017 19:15:40] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[27/Oct/2017 19:15:40] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[27/Oct/2017 19:15:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 19:15:40] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[27/Oct/2017 19:15:40] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[27/Oct/2017 19:15:40] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[27/Oct/2017 19:15:40] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[27/Oct/2017 19:15:40] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[27/Oct/2017 19:15:43] "GET /admin/API/ HTTP/1.1" 200 2562
+[27/Oct/2017 19:15:43] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[27/Oct/2017 19:15:43] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[27/Oct/2017 19:15:43] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[27/Oct/2017 19:15:46] "GET /admin/API/dci/ HTTP/1.1" 200 17236
+[27/Oct/2017 19:15:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 19:15:48] "GET /admin/API/dci/118/change/ HTTP/1.1" 200 18662
+[27/Oct/2017 19:15:48] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[27/Oct/2017 19:15:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 19:15:48] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[27/Oct/2017 19:15:48] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[27/Oct/2017 19:15:48] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[27/Oct/2017 19:15:48] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20529
+[27/Oct/2017 19:15:48] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7790
+[27/Oct/2017 19:15:48] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 26, 2017 - 14:25:58
+Django version 1.11.6, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 27, 2017 - 19:17:58
+Django version 1.11.6, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[27/Oct/2017 19:18:09] "GET /admin/API/dci/ HTTP/1.1" 200 17354
+[27/Oct/2017 19:18:12] "GET /admin/API/dci/ HTTP/1.1" 200 17354
+[27/Oct/2017 19:18:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[27/Oct/2017 19:18:14] "GET /admin/API/dci/118/change/ HTTP/1.1" 200 18780
+[27/Oct/2017 19:18:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 27, 2017 - 19:18:05
+Django version 1.11.6, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fb039f50158>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 251, in raise_last_exception
+    six.reraise(*_exception)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/apps/registry.py", line 116, in populate
+    app_config.ready()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/contrib/admin/apps.py", line 23, in ready
+    self.module.autodiscover()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/module_loading.py", line 50, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/admin.py", line 20, in <module>
+    admin.site.register(dci, DCIModelAdmin)
+NameError: name 'DCIModelAdmin' is not defined
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 27, 2017 - 19:20:10
+Django version 1.11.6, using settings 'Makaneyyat.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fa6425e0598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 31, in <module>
+    class DublinViewSet(viewsets.ModelViewSet):
+NameError: name 'viewsets' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fc98fe10598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 32, in <module>
+    class DublinViewSet(viewsets.ModelViewSet):
+NameError: name 'viewsets' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fb0d98e4598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 5, in <module>
+    from .serializers import LocationGeoSerializer
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/serializers.py", line 24, in <module>
+    class DublinSerializer(serializers.HyperlinkedModelSerializer):
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/serializers.py", line 25, in DublinSerializer
+    class Meta:
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/serializers.py", line 26, in Meta
+    model = dci
+NameError: name 'dci' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f525b536598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 32, in <module>
+    class DublinViewSet(viewsets.ModelViewSet):
+NameError: name 'viewsets' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fe810f44598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 32, in <module>
+    class DublinViewSet(viewsets.ModelViewSet):
+NameError: name 'viewsets' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7efcf2c16598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 32, in <module>
+    class DublinViewSet(viewsets.ModelViewSet):
+NameError: name 'viewsets' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f78c064c598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 32, in <module>
+    class DublinViewSet(viewsets.ModelViewSet):
+NameError: name 'viewsets' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f18a6b5b598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 32, in <module>
+    class DublinViewSet(viewsets.ModelViewSet):
+NameError: name 'viewsets' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fb59495a598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 32, in <module>
+    class DublinViewSet(viewsets.ModelViewSet):
+NameError: name 'viewsets' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f0383d9e598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 32, in <module>
+    class DublinViewSet(viewsets.ModelViewSet):
+NameError: name 'viewsets' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f4da490b598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 32, in <module>
+    class DublinViewSet(viewsets.ModelViewSet):
+NameError: name 'viewsets' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f5e05c60598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 32, in <module>
+    class DublinViewSet(viewsets.ModelViewSet):
+NameError: name 'viewsets' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fe19fc6d598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 11, in <module>
+    from django_filters.rest_framework import DjangoFilterBackend
+ModuleNotFoundError: No module named 'django_filters'
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f111bbbd598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 11, in <module>
+    from django_filters.rest_framework import DjangoFilterBackend
+ModuleNotFoundError: No module named 'django_filters'
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f8d9b674598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 11, in <module>
+    from django_filters.rest_framework import DjangoFilterBackend
+ModuleNotFoundError: No module named 'django_filters'
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f0c52472598>
+Traceback (most recent call last):
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/Makaneyyat/urls.py", line 40, in <module>
+    url(r'^API/', include('API.urls')),
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/html/Makaneyyat/venv/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/urls.py", line 4, in <module>
+    from .views import LocationListView, LocationDetailView
+  File "/var/www/html/Makaneyyat/Makaneyyat/API/views.py", line 11, in <module>
+    from django_filters.rest_framework import DjangoFilterBackend
+ModuleNotFoundError: No module named 'django_filters'
+Performing system checks...
+

@@ -1,0 +1,78 @@
+{% extends "admin/base_site.html" %}
+
+
+{% block content%}
+<form method="POST" enctype="multipart/form-data" >
+{% csrf_token %}
+{{ form.non_field_errors }}
+<br>
+<div class="fieldWrapper">
+    {{ form.shpfile.errors }}
+    <label for="{{ form.shpfile.id_for_label }}">Select a .shp File:</label>
+    {{ form.shpfile }} 
+</div>
+<div class="fieldWrapper">
+    {{ form.shxfile.errors }}
+    <label for="{{ form.shxfile.id_for_label }}">Select a .shx File:</label>
+    {{ form.shxfile }} 
+</div>
+<div class="fieldWrapper">
+    {{ form.dbffile.errors }}
+    <label for="{{ form.dbffile.id_for_label }}">Select a .dbf File:</label>
+    {{ form.dbffile }} 
+</div>
+<div class="fieldWrapper">
+    {{ form.prjfile.errors }}
+    <label for="{{ form.prjfile.id_for_label }}">Select a .prj File:</label>
+    {{ form.prjfile }} 
+</div>
+<div class="fieldWrapper">
+    {{ form.qpjfile.errors }}
+    <label for="{{ form.qpjfile.id_for_label }}">Select a .qpj File:</label>
+    {{ form.qpjfile }} 
+</div>
+<br>
+<input type="submit" value="import" name="submit">
+{% if submition == True %}
+<p> file imported successfully!<p>
+{% endif %}
+
+<div>
+    <br><br><hr/><br><br>
+    <ul>
+        <li><strong>Instructions:</strong><br></li> 
+        <li>.shp .shx .dbf .prj .qpj all are required</li>
+        <li>the feature in the .shp file should have the same geometry type</li>
+        <li> the possible fields for any feature in the .shp file are:
+            <ul>
+                <li>'title'</li>
+                <li>'subject'</li>
+                <li>'description'</li>
+                <li>'creator'</li>
+                <li>'publisher'</li>
+                <li>'contributor'</li>
+                <li>'date'</li>
+                <li>'type'</li>
+                <li>'format'</li>
+                <li>'source'</li>
+                <li>'language'</li>
+                <li>'coverage'</li>
+                <li>'rights'</li>
+                <li>'ar_title'</li>
+                <li>'ar_subject'</li>
+                <li>'ar_description'</li>
+                <li>'CLCode' with value set from the table of the following link:
+                <a href="https://wiki.openstreetmap.org/wiki/Corine_Land_Cover" target="blank">CORINE Land Cover Codes</a>
+                take the code of the third level. eg: 
+                <ul>
+                    <li><strong>111</strong> for Continuous urban fabric</li>
+                    <li><strong>213</strong> for Rice fields</li>
+                </ul>
+                and the system will automatically will find the appropriate values of all levels. 
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+{% endblock %}

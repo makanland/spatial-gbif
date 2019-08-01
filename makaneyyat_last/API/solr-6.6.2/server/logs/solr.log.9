@@ -1,0 +1,43 @@
+2019-07-23 08:44:24.937 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2019-07-23 08:44:25.864 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.2
+2019-07-23 08:44:25.865 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-07-23 08:44:25.866 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /var/www/html/makaneyyat_last/API/solr-6.6.2
+2019-07-23 08:44:25.917 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-07-23T08:44:25.871Z
+2019-07-23 08:44:25.918 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2019-07-23 08:44:26.065 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr
+2019-07-23 08:44:26.111 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr/solr.xml
+2019-07-23 08:44:28.066 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2019-07-23 08:44:28.508 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr
+2019-07-23 08:44:28.512 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [elements]
+2019-07-23 08:44:28.519 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-07-23 08:44:28.769 INFO  (main) [   ] o.e.j.s.Server Started @5861ms
+2019-07-23 08:44:28.857 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.c.SolrResourceLoader [elements] Added 53 libs to classloader, from paths: [/var/www/html/makaneyyat_last/API/solr-6.6.2/contrib/clustering/lib, /var/www/html/makaneyyat_last/API/solr-6.6.2/contrib/extraction/lib, /var/www/html/makaneyyat_last/API/solr-6.6.2/contrib/langid/lib, /var/www/html/makaneyyat_last/API/solr-6.6.2/contrib/velocity/lib, /var/www/html/makaneyyat_last/API/solr-6.6.2/dist]
+2019-07-23 08:44:30.030 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.2
+2019-07-23 08:44:30.187 WARN  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2019-07-23 08:44:30.256 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.s.IndexSchema [elements] Schema name=haystack-schema
+2019-07-23 08:44:30.510 WARN  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2019-07-23 08:44:31.138 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.s.IndexSchema Loaded schema haystack-schema/1.6 with uniqueid field id
+2019-07-23 08:44:31.236 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.c.CoreContainer Creating SolrCore 'elements' using configuration from instancedir /var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr/elements, trusted=true
+2019-07-23 08:44:31.299 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2019-07-23 08:44:31.314 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.c.SolrCore [[elements] ] Opening new SolrCore at [/var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr/elements], dataDir=[/var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr/elements/data/]
+2019-07-23 08:44:31.395 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-07-23 08:44:31.982 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-07-23 08:44:31.982 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-07-23 08:44:32.139 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2019-07-23 08:44:32.140 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-07-23 08:44:32.708 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.s.SolrIndexSearcher Opening [Searcher@39c7cc9[elements] main]
+2019-07-23 08:44:32.772 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr/elements/conf
+2019-07-23 08:44:32.847 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-07-23 08:44:32.860 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-07-23 08:44:32.864 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /var/www/html/makaneyyat_last/API/solr-6.6.2/server/solr/elements/conf/elevate.xml
+2019-07-23 08:44:32.960 INFO  (coreLoadExecutor-6-thread-1) [   x:elements] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2019-07-23 08:44:33.206 INFO  (searcherExecutor-7-thread-1-processing-x:elements) [   x:elements] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@39c7cc9[elements] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1oq(6.6.2):C6298) Uninverting(_1pb(6.6.2):C12364) Uninverting(_1pc(6.6.2):C11)))}
+2019-07-23 08:44:33.206 INFO  (searcherExecutor-7-thread-1-processing-x:elements) [   x:elements] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-07-23 08:44:33.207 INFO  (searcherExecutor-7-thread-1-processing-x:elements) [   x:elements] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-07-23 08:44:33.212 INFO  (searcherExecutor-7-thread-1-processing-x:elements) [   x:elements] o.a.s.c.SolrCore [elements] Registered new searcher Searcher@39c7cc9[elements] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1oq(6.6.2):C6298) Uninverting(_1pb(6.6.2):C12364) Uninverting(_1pc(6.6.2):C11)))}
+2019-07-23 08:54:51.491 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1629687658
+2019-07-23 08:54:51.492 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
+2019-07-23 08:54:51.492 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
+2019-07-23 08:54:51.492 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
+2019-07-23 08:54:51.495 INFO  (coreCloseExecutor-12-thread-1) [   x:elements] o.a.s.c.SolrCore [elements]  CLOSING SolrCore org.apache.solr.core.SolrCore@4dc10ab5
+2019-07-23 08:54:51.676 INFO  (coreCloseExecutor-12-thread-1) [   x:elements] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.elements

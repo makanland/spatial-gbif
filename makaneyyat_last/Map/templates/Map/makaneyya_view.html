@@ -1,0 +1,47 @@
+{% extends 'Map/base.html'%}
+{% load map_temptags %}
+{% load static %}
+
+{%block body_class%}container-fluid{%endblock%}
+
+{%block left-panel%}
+  <div id ="makaneyya-info">
+    <h3>Makaneyya Info:</h3>
+  </div>
+{%endblock%}
+
+{%block mid-panel%}
+  <div id="map" class="map">
+  </div>
+    <div id="demo">
+
+    </div>
+
+{%endblock%}
+
+{%block right-panel%}
+  <div id="map-options" class="createMakanyya" >
+    <p class="font-weight-bold">Basemap:</p> 
+    <select class="custom-select" id="select-base-map" onchange="reload_tile_layer()">
+        <option value="Stamen">Stamen Map</option>
+        <option value="OSM">Open Street Map</option>
+        <option value="Bing">Bing Map</option>
+    </select>
+    <br/>
+    <div id="element-info">
+           
+    </div>
+  </div>
+{%endblock%}
+
+{%block extra_js%}
+     <script src='{% static "Map/js/Pagination.js" %}'></script>
+  <script src='{% static "Map/js/makaneyyaView.js" %}'></script>
+  <script src='{% static "Map/js/explore_gbif.js" %}'></script>
+  <script src='{% static "Map/js/overlay.js" %}'></script>
+
+    <script>
+        $('.loading-mask.loader').hide()
+
+    </script>
+{%endblock%}

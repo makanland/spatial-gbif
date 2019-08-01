@@ -1,0 +1,18 @@
+{% load custom %}
+{% load wagtailcore_tags %}
+
+<ul class="nav navbar-nav">
+    {% for menuitem in menuitems %}
+    {% with menuitem=menuitem.specific %}
+        <li class="{% if menuitem.show_dropdown %}dropdown{% endif %}{% if calling_page.url == menuitem.url %} active{% endif %}">
+            {% if menuitem.show_dropdown %}
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#">{{ menuitem.Title }} <b class="caret"></b></a>
+                {% navbar_children parent=menuitem %}
+            {% else %}
+                <a href="{% pageurl menuitem %}">{{ menuitem.Title}}</a>
+            {% endif %}
+        </li>
+    {% endwith %}
+    {% endfor %}
+    
+</ul>

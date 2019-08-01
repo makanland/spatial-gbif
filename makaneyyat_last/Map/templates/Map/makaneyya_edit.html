@@ -1,0 +1,173 @@
+{% extends 'Map/base.html' %}
+{% load map_temptags %}
+{% load static %}
+{% block extra_css %}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+{% endblock %}
+{% block body_class %}container-fluid{% endblock %}
+
+{% block left-panel %}
+    <div id="map-facets">
+    </div>
+
+{% endblock %}
+
+{% block mid-panel %}
+    <div id="map" class="map">
+    </div>
+    <div id='popup' class="ol-popup">
+        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+        <div id="popup-content">
+            <div class="search-box">
+                <h5>Polygon info:</h5>
+                <p><span id="level1-title" > </span><span id="level1"></span></p>
+                <p><span id="level2-title" > </span><span id="level2"></span></p>
+                <p><span id="level3-title" > </span><span id="level3"></span></p>
+                <p><span id="level4-title" > </span><span id="level4"></span></p>
+                <p>Year: <span id="year-search1"></span></p>
+                <h5>Get GBIF Plantae Families</h5>
+                <div class="multiselect">
+                <div class="selectBox" onclick="showCheckboxes()">
+                  <select>
+                    <option value="all_families">Select Families</option>
+                  </select>
+                  <div class="overSelect"></div>
+                </div>
+                <div id="checkboxes" style="height: 80px;">
+
+                </div>
+              </div>
+                <div id="families-box">
+
+                </div>
+                <h5>Get GBIF Occurrence by year</h5>
+                <div class="multiselect">
+                <div class="selectBox" onclick="showCheckboxesYears()">
+                  <select>
+                    <option value="all_years">Select Years</option>
+                  </select>
+                  <div class="overSelect"></div>
+                </div>
+                <div id="checkboxes-years" style="height: 80px;">
+
+                </div>
+              </div>
+                <button id="search-box-filter">Search</button>
+                <button id="clear-points">Clear</button>
+            </div>
+            <div class="no-data-result">
+                <p>No GBIF data in this Polygon!</p>
+            </div>
+        </div>
+        <div id="loader">
+            <img class="load-image" src='{% static "Map/img/giphy.gif" %}'/>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block right-panel %}
+    <div id="map-options" class='map-options'>
+        <p>Basemap:</p>
+        <select class="custom-select" id="select-base-map" onchange="reload_tile_layer()">
+            <option value="Stamen">Stamen Map</option>
+            <option value="OSM">Open Street Map</option>
+            <option value="Bing">Bing Map</option>
+        </select>
+        <p>Display:</p>
+        <select class="custom-select" id="select-display-text" onchange="update_display_text()">
+            <option value="title">title</option>
+            <option value="level1">Level 1</option>
+            <option value="level2">Level 2</option>
+            <option value="level3">Level 3</option>
+            <option value="level4">Level 4</option>
+        </select>
+        <br>
+        {% if user.is_authenticated %}
+            <form id='makaneyya-form'>
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for='title'>Title:</label>
+                    <input class="form-control" id="title" name="title" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for='description'>Description:</label>
+                    <textarea class="form-control" id="description" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for='tags'>Tags:</label>
+                    <input class="form-control" id="tags" name="tags" placeholder="Enter tags comma seperated"
+                           type="text" required>
+                </div>
+                <label class="gbif-data"> GBIF data tool</label>
+                <div class="search">
+                    <input type="text" id="search" name="search"/>
+                    <div class="autocomplete">
+                    </div>
+                    <p class="search-button" id="search-btn">Search</p>
+                    <hr/>
+                    <p class="search-area-button search-button" id="search-by-area-btn">Draw Polygon</p>
+
+                    <label class="search-label">Amount of result</label>
+                    <input type="text" id="query-num" name="query-num"/>
+                    <br/>
+                    <label class="search-label">Country</label>
+                    <select id="country">
+                        <option value="">All</option>
+                        <option value="PS">Palestine</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <button class="btn btn-default btn-olive" type="submit" id='create-Makaneyya'>create</button>
+                </div>
+                <p style="color:red; font-weight:lighter;" id="message"></p>
+            </form>
+            <div class="form-group">
+                <button onclick="snap_map()" class="btn btn-default btn-olive">Snapshot view <i
+                        class="fas fa-camera-retro"></i></button>
+            </div>
+            <div id="geometry-name" >
+                <p class="value"></p>
+            </div>
+        {% else %}
+            <label class="gbif-data"> GBIF data tool </label>
+            <div class="search">
+                <input type="text" id="search" name="search"/>
+                <div class="autocomplete">
+                </div>
+                <p class="search-button" id="search-btn">Search</p>
+                <hr/>
+                <p class="search-area-button search-button" id="search-by-area-btn">Draw Polygon</p>
+                <br/>
+
+                <label class="search-label">Amount of result</label>
+                <br/>
+                <input type="text" id="query-num" name="query-num"/>
+                <label class="search-label">Country</label>
+                <br/>
+                <select id="country">
+                    <option value="">All</option>
+                    <option value="PS">Palestine</option>
+                </select>
+            </div>
+            <p style="color: black"> please,click <a href="{% url 'login' %}"> here to login </a> to create Makaneyya
+            </p>
+            <div id="geometry-name" >
+                <p class="value"></p>
+            </div>
+        {% endif %}
+
+
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+    <script src='{% static "Map/js/makaneyyaEditor.js" %}'></script>
+    <script src='{% static "Map/js/explore_gbif.js" %}'></script>
+    <script src='{% static "Map/js/polygon_search_box.js" %}'></script>
+    <script type="text/javascript">
+        var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+    </script>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% for collection in collections %} 
+      <h3>{{collection.alias}}
+        <span class="tooltip"><i class="fa fa-info-circle" aria-hidden="true"></i>
+          <span class="tooltiptext">{{collection.info}}</span>
+        </span>
+      </h3>      
+      <ul class='facets'>
+          {% for facet in collection.facets %} 
+            <li>
+              <span onclick="toggle_facet('{{facet.name}}-facet')">
+                <i class="fa fa-sort-down"></i> {{facet.name.capitalize}}
+              </span>
+              <ul class="facet" id="{{facet.name}}-facet" >
+                {% for term, freq in facet.terms %}
+                <li class="facet-term">
+                  <input type="checkbox" onclick="filter_by_facet('{{collection.name}}','{{facet.name}}', this)" name="{{collection.name}}-{{facet.name}}" value='{{term}}'>
+                  {{term.lower.capitalize}}
+                  <i class="term-freq">{{freq}}</i>
+                </li> 
+                {% endfor %}
+              </ul>
+            </li>
+          {% endfor %}
+      </ul>
+{% endfor %}

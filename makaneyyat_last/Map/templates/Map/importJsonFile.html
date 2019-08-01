@@ -1,0 +1,64 @@
+{% extends "admin/base_site.html" %}
+
+
+{% block content%}
+<form method="POST" enctype="multipart/form-data" >
+{% csrf_token %}
+{{ form.non_field_errors }}
+<br>
+<div class="fieldWrapper">
+    {{ form.jsonfile.errors }}
+    <label for="{{ form.jsonfile.id_for_label }}">Select a .geojson File:</label>
+    {{ form.jsonfile }}
+</div>
+
+<div class="fieldWrapper">
+    {{ form.createmakaneyya.errors }}
+    <label for="{{ form.createmakaneyya.id_for_label }}">Do you wnat to create Makaneyya?:</label>
+    {{ form.createmakaneyya }}
+</div>
+<br>
+<input type="submit" value="import" name="submit">
+{% if submition == True %}
+<p> file imported successfully!<p>
+{% endif %}
+
+<div>
+    <br><br><hr/><br><br>
+    <ul>
+        <li><strong>Instructions:</strong><br></li> 
+        <li>.geojson is required</li>
+        <li> Date should be exported as date format in qgis </li>
+        <li> the possible fields for any feature in the .geojson file are:
+            <ul>
+                <li>'title'</li>
+                <li>'subject'</li>
+                <li>'description'</li>
+                <li>'creator'</li>
+                <li>'publisher'</li>
+                <li>'contributor'</li>
+                <li>'date'</li>
+                <li>'type'</li>
+                <li>'format'</li>
+                <li>'source'</li>
+                <li>'language'</li>
+                <li>'coverage'</li>
+                <li>'rights'</li>
+                <li>'ar_title'</li>
+                <li>'ar_subject'</li>
+                <li>'ar_description'</li>
+                <li>'CLCode' with value set from the table of the following link:
+                <a href="https://wiki.openstreetmap.org/wiki/Corine_Land_Cover" target="blank">CORINE Land Cover Codes</a>
+                take the code of the third level. eg: 
+                <ul>
+                    <li><strong>111</strong> for Continuous urban fabric</li>
+                    <li><strong>213</strong> for Rice fields</li>
+                </ul>
+                and the system will automatically will find the appropriate values of all levels. 
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% load custom %}
+{% load wagtailcore_tags %}
+<footer>
+    <nav class="navbar">
+      <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="#" class="brand-logo"><img id="logo" src="https://res.cloudinary.com/sockhat-dev/image/upload/v1491988583/logo_grey_zldy5b.svg"></a>
+      </div>
+        {% get_site_root as site_root %}
+        {% navbar parent=site_root calling_page=self %}
+      </div>
+    </nav>  
+</footer>

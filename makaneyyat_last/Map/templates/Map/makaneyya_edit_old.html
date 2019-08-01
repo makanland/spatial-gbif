@@ -1,0 +1,82 @@
+{% extends 'Map/base.html'%}
+{% load map_temptags %}
+{% load static %}
+
+{%block extra_css%}
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+{%endblock%}
+{%block body_class%}container-fluid{%endblock%}
+
+{%block left-panel%}
+  <div class="row">
+    <button onclick="search_backward()" class="btn btn-link"><i class="fas fa-angle-double-left"></i>backkkkkkkkkkk</button>
+  </div>
+  <div id="map-facets">
+  </div>
+{%endblock%}
+
+{%block mid-panel%}
+  <div id="map" class="map">
+  </div>
+  <div class="row justify-content-center">
+    <div id ='page-nav'></div> 
+  </div>
+{%endblock%}
+
+{%block right-panel%}
+  <div id="map-options" class='map-options'>
+    <p>Basemap:</p> 
+    <select class="custom-select" id="select-base-map" onchange="reload_tile_layer()">
+      <option value="Stamen">Stamen Map</option>
+      <option value="OSM">Open Street Map</option>
+      <option value="Bing">Bing Map</option>
+    </select>
+    <p>Display:</p> 
+    <select class="custom-select" id="select-display-text" onchange="update_display_text()">
+      <option value="title">title</option>
+      <option value="level1">Level 11111111111111111111</option>
+      <option value="level2">Level 2</option>
+      <option value="level3">Level 3</option>
+      <option value="level4">Level 4</option>
+    </select>
+    <br>
+    {% if user.is_authenticated %}
+      ` <form id='makaneyya-form'>
+          {% csrf_token %}
+          <div class="form-group">
+            <label for='title'>Title:</label>
+            <input class="form-control" id="title" name="title"  type="text" required>
+          </div>
+          <div class="form-group">
+            <label for='description'>Description:</label>
+            <textarea class="form-control" id="description" rows="2" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for='tags'>Tags:</label>
+            <input class="form-control" id="tags" name="tags" placeholder="Enter tags comma seperated" type="text" required>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-default btn-olive" type="submit" id='create-Makaneyya'>create</button>
+          </div>
+          <p style="color:red; font-weight:lighter;" id="message"></p>
+        </form>
+        <div class="form-group">
+          <button onclick="snap_map()" class="btn btn-default btn-olive">Snapshot view <i class="fas fa-camera-retro"></i></button>
+        </div>
+      {% else %}
+        <p style="color: black"> please,click <a href="{% url 'login'%}"> here to login </a> to create Makaneyya </p>
+    {% endif %}
+  </div>
+{%endblock%}
+
+{%block extra_js%}
+    <script src='{% static "Map/js/makaneyyaEditor_old.js" %}'></script>
+    <script src='{% static "Map/js/overlay.js" %}'></script>
+    <script type="text/javascript">
+      var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+    </script> 
+{%endblock%}
+
+
+
+

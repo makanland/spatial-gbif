@@ -1,0 +1,9 @@
+.ol-zoom {
+    top: 1%;
+    right:20%;
+    left:unset;
+    z-index: 1;
+}
+.ol-attribution{
+	z-index: 1;
+}

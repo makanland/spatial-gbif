@@ -1,0 +1,63 @@
+      body{
+        font-family: sans-serif;
+      }
+
+      header{
+        height: 350px;
+        background-image: url(https://res.cloudinary.com/faradthakh/image/upload/v1520442701/Makaneyyat_BG.png);
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        vertical-align: middle;
+      }
+      #makaneyyat-filter-form{
+        position: relative;
+        top:55%;
+      }
+      #makaneyyat-filter-form input[type=submit]{
+        background-color: #45a445;
+        color: white;
+        width: 10%;
+        height: 40px;
+        border: 2px solid #fff;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 25px;
+      }
+      #makaneyyat-filter-field {
+        color: #139000;
+        background: white;
+        height: 50px;
+        border: 1px solid #c0b3b3;
+        border-radius: 20px;
+        padding: 10px;
+      }
+
+      footer{
+        clear: both;
+        width: 100%;
+        padding: 8%;
+        background-color:#2e333a;
+        color: #cccccc;
+      }
+
+      .container{
+        padding: 20px 10px;
+        margin:20px 10px;
+      }
+      .makaneyya-card{
+        width: 18rem;
+        float:left;
+        margin:20px 20px;
+          height: 350px;
+      }
+  
+      .makaneyya-header{
+        font-size: 26px;
+        font-weight: bold;
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+      .makaneyya-body{
+        display:none;
+      }

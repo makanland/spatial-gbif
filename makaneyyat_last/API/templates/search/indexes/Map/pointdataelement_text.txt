@@ -1,0 +1,10 @@
+{{object.type}}
+{{object.format}}
+{{object.title}}
+{{object.description}}
+{{object.source}}
+{{object.subject}}
+{{object.date}}
+{{object.clc.level1}}
+{{object.clc.level2}}
+{{object.clc.level3}}

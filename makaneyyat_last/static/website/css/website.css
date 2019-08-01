@@ -1,0 +1,84 @@
+body{
+  font-family: sans-serif;
+}
+
+header{
+  height: 550px;
+  padding: 3%;
+  background-image: url(https://res.cloudinary.com/faradthakh/image/upload/v1512984982/Makaneyyat_Collage2_de4wcv.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#logo {
+
+	width:170px;
+}
+
+
+footer{
+	width: 100%;
+	padding: 8%;
+	background-color:#2e333a;
+	color: #cccccc;
+}
+
+.section {
+	margin:8%; 
+}
+.btn-olive{
+	background-color: #75A646;
+	border-color:#75A646;
+}
+header .navbar-nav {
+ 	margin-left:10px;
+ 	margin-right:10px;
+}
+
+header .navbar-nav a{
+ 	color: #75A646;
+}
+header .navbar-nav a:hover{
+	border: 1px solid #75A646;
+}
+footer .navbar-nav a{
+ 	color:#cccccc;
+}
+footer .navbar-nav a:hover{
+	font-weight:bolder;
+}
+footer .navbar-nav{
+	float: right;
+}
+#mainNavPills, form[id="login"] {
+	border: 1px solid #75A646;
+	border-radius: 10%;
+	padding: 15% 8%;
+  	margin: 3%;
+}
+#mainNavPills a{
+	color:#75A646;
+} 
+#mainNavPills .active a{
+	background-color:#75A646;
+	color: #ffffff;
+} 
+
+
+#content{
+  width: 50%;
+  margin: auto;
+  padding:20px; 
+  font-size:larger;
+}
+
+#tooltip {
+	margin:0px;
+	padding: 0px;
+	width: 50px;
+	position: relative;
+	top:85%;
+}
+#tooltip span {
+	font-size: 20px;
+}

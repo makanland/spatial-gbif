@@ -1,0 +1,17 @@
+{% load custom %}
+{% load wagtailcore_tags %}
+{% get_alt_lang request.LANGUAGE_CODE as alt_lang %}
+{% get_text_dir request.LANGUAGE_CODE as txt_dir %}
+<header>
+	<div class="row">
+		<div class="col-2">
+			<a href="/"><img class="nav-logo" src="https://res.cloudinary.com/sockhat-dev/image/upload/v1491988583/logo_green_k8u53n.svg" alt="main logo">
+			</a>
+		</div>
+          		{% get_site_root as site_root %}
+
+		<div class="col-10">{%include 'registration/header.html'%}</div>
+	</div>
+</header>
+
+

@@ -1,0 +1,51 @@
+{% load static %}
+{% load map_temptags %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{%static 'Map/css/makaneyyat-list.css' %}" type="text/css">
+  </head>
+  <body>
+
+    {%include 'registration/header.html'%}
+    <header></header>
+    <div class="container">
+      <form  method="GET" id="makaneyyat-filter-form">
+        <span id='makaneyyat-filter-field'>Author: <input type="text" name="author" placeholder="filter author name"></span>
+        <span id='makaneyyat-filter-field'>Title: <input type="text" name="title" placeholder="filter by title"></span>
+        <span id='makaneyyat-filter-field'>Tags: <input type="text" name="tags" placeholder="filter by rags"></span>
+        <input type="submit" name="submit" value="Filter">
+      </form>
+    </div>
+  <div class="container">
+   <div class="card makaneyya-card">
+      <img class="card-img-top" src="https://res.cloudinary.com/faradthakh/image/upload/v1521376793/makaneyya-item-bg.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Create Makaneyya</h5>
+        <p class="card-text">Create Makaneyyat and explore all our elements!</p>
+        <a href="{% url 'map:makaneyya-create' %}" class="btn btn-primary">Go</a>
+      </div>
+    </div>
+    {%for makaneyya in makaneyyat%}
+    <div class="card makaneyya-card">
+      <img class="card-img-top" src="https://res.cloudinary.com/faradthakh/image/upload/v1521376793/makaneyya-item-bg.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{makaneyya.title}}</h5>
+        <p class="card-text">{{makaneyya.description}}</p>
+        <a href="view/{{makaneyya.id}}" class="btn btn-primary">Display</a>
+      </div>
+    </div>
+    {%empty%}
+      <p> No matchiing makaneyyat found!</p>
+    {%endfor%}
+  </div>
+  <footer>
+     <div class="container-fluid">
+        <a href="//{{ request.get_host }}"><img width="170px" src="https://res.cloudinary.com/sockhat-dev/image/upload/v1491988583/logo_grey_zldy5b.svg"></a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="{% static 'Map/js/makaneyyatList.js' %}"></script>
+  </body>
+</html>

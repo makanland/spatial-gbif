@@ -1,0 +1,471 @@
+body {
+    background-color: #f2f1ef;
+    font-family: sans-serif;
+
+}
+
+header {
+    padding: 5px;
+}
+
+footer {
+    width: 100%;
+    padding: 8%;
+    background-color: #2e333a;
+    color: #cccccc;
+}
+
+.container-fluid, .form-group .btn, .form-group .form-control, .col .btn {
+    font-size: 0.70rem;
+}
+
+.nav-item .nav-link {
+    padding: .5rem 0.5rem;
+}
+
+.nav-logo {
+    height: 80%;
+    width: 100%;
+}
+
+.logo {
+    height: 85px;
+    width: 135px;
+}
+
+
+#right-panel {
+    margin-left: 80%;
+    margin-top: 1%;
+}
+
+#mid-panel {
+
+}
+
+.row {
+    position: relative;
+}
+
+#left-panel, #right-panel {
+    position: absolute;
+    z-index: 1;
+    background-color: #F9F9F96F;
+    color: #4b4848;
+    font-size: 10px;
+    width: 100%;
+    bottom: 50px;
+    top: 0px;
+}
+
+#left-panel,
+.loading-mask.loader {
+    margin-left: 2%;
+    margin-top: 1%;
+    overflow-y: scroll;
+    width: 250px;
+
+}
+
+.loading-mask.loader {
+    bottom: 50px;
+    top: 0;
+}
+
+/*#right-panel {*/
+/*    */
+/*}*/
+
+.loading-mask.loader {
+    background: white;
+    position: absolute;
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/*
+start dci info table styling
+*/
+#info-table thead th {
+    background-color: #75A646;
+    color: #FBFBFB;
+}
+
+#info-table tbody td {
+    color: #275420;
+}
+
+#gpif-table thead th {
+    background-color: #75A646;
+    color: #FBFBFB;
+}
+
+#gpif-table tbody td {
+    color: #275420;
+}
+
+
+/*
+end of dci info table styling
+*/
+#map-facets ul {
+    list-style-type: none;
+
+}
+
+.facet-field {
+    color: #666620;
+    font-weight: bold;
+}
+
+.facet-term {
+    text-align: left;
+    white-space: normal;
+}
+
+#map-facets li a {
+    cursor: pointer;
+}
+
+#map-facets li a:hover {
+    font-weight: bolder;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.makaneyya-tag {
+    padding: 7px;
+    margin: 5px;
+    color: white;
+    background: #666620;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+.makaneyya-info-row {
+    font-size: 13px;
+    border: 1px dotted #666620;
+}
+
+#element-info {
+    color: black;
+    margin-top: 20px;
+
+}
+
+.element-info-head {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#element-info-row p {
+    font-size: 12px;
+}
+
+#btn-lang {
+    float: right;
+    margin: 10px;
+}
+
+.btn-olive {
+    background: #75A646;
+    color: white;
+}
+
+#page-nav {
+    padding-top: 30px;
+}
+
+#page-nav a {
+    color: #75A646;
+}
+
+#page-nav .active a {
+    color: white;
+    background: #75A646;
+    border-color: #75A646;
+}
+
+.expand-collapse {
+    color: olive;
+    padding: 0px;
+    height: 15px;
+    width: 20px;
+    text-align: center;
+    line-height: 7px;
+    margin-bottom: .5rem;
+    margin-left: 8px;
+    background-color: #b6c59a;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 2px 2px 0 0;
+}
+
+.counter {
+    float: right;
+    padding: 7px 14px 7px 14px;
+    background: #75A646;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.search-button {
+
+    padding: 10px 15px 10px 15px;
+    background: #1e7e34;
+    color: white;
+    font-size: 14px;
+    border-radius: 2px;
+    width: 45%;
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+#query-num {
+    height: 35px;
+    border-radius: 2px;
+    background: rgba(255, 250, 250, 0.7);
+    border: 1px solid #1e7e34;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.search-label {
+    font-size: 12px;
+}
+
+.search {
+    margin-top: 15px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#search {
+
+    height: 35px;
+    border-radius: 2px;
+    background: rgba(255, 250, 250, 0.7);
+    border: 1px solid #1e7e34;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+
+}
+
+#country {
+    font-size: 12px;
+}
+
+.search-area-button.search-button {
+    float: inherit;
+    display: block;
+    clear: both;
+    width: 45%;
+    margin-bottom: 0px;
+}
+
+.autocomplete {
+    list-style: none;
+    background: white;
+    position: absolute;
+    width: 90%;
+    border: solid 1px green;
+    cursor: pointer;
+    display: none;
+    overflow-y: scroll;
+    height: 280px;
+}
+
+.autocomplete li:hover {
+    background: green;
+    color: white;
+}
+
+.autocomplete li {
+    padding-left: 5px;
+
+}
+
+
+.load-image {
+    margin-top: 70%;
+}
+
+.gbif-data {
+    font-size: 2em;
+}
+
+.ol-popup {
+    position: absolute;
+    background-color: white;
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+    min-width: 280px;
+}
+
+.ol-popup:after, .ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+}
+
+.ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+}
+
+.ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+
+.ol-popup-closer:after {
+    content: "✖";
+}
+
+.multiselect {
+    width: 200px;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkboxes, #checkboxes-years {
+    display: none;
+    border: 1px #dadada solid;
+    position: absolute;
+    background: white;
+    width: 100%;
+    z-index: 1;
+    overflow-Y: scroll;
+}
+
+button#clear-points {
+    float: right;
+}
+
+.multiselect {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+button#search-box-filter, button#clear-points {
+    font-size: 14px;
+}
+
+#checkboxes label, #checkboxes-years label {
+    display: block;
+}
+
+#checkboxes label:hover, #checkboxes-years label:hover {
+    background-color: #1e90ff;
+}
+
+div#loader {
+    position: absolute;
+    color: white;
+    width: 100%;
+    /* z-index: 10; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    opacity: 0.6;
+}
+
+div#popup-content {
+    position: relative;
+}
+div#loader img.load-image {
+    margin: 0;
+}
