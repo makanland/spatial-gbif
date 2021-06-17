@@ -46,7 +46,7 @@ tablib==0.12.1
 unicodecsv==0.14.1
 Unidecode==0.4.21
 urllib3==1.22
-wagtail==1.12.2
+wagtail==2.11.8
 webencodings==0.5.1
 Werkzeug==0.12.2
 Willow==0.4
